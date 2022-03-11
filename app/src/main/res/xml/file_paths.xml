@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <external-path name="Download" path="/Download/" />
+    <external-path name="persokbase" path="/Download/fr.argouges.persokbase/" />
+    <external-path name="files" path="/Download/fr.argouges.persokbase/files/" />
+    <external-path name="Documents" path="/Documents/" />
+    <external-path name="persokbase" path="/Documents/fr.argouges.persokbase/" />
+    <external-path name="files" path="/Documents/fr.argouges.persokbase/files/" />
+    <external-media-path name="persokbase" path="/fr.argouges.persokbase/" />
+    <external-media-path name="files" path="/fr.argouges.persokbase/files/" />
+    <cache-path name="persokbase" path="/fr.argouges.persokbase/" />
+    <cache-path name="files" path="/fr.argouges.persokbase/cache/" />
+    <files-path name="persokbase" path="/data/user/0/fr.argouges.persokbase/" />
+    <files-path name="files" path="/data/user/0/fr.argouges.persokbase/files/" />
+    <files-path name="persokbase" path="/storage/emulated/0/Download/fr.argouges.persokbase/" />
+    <files-path name="files" path="/storage/emulated/0/Download/fr.argouges.persokbase/files/" />
+</paths>

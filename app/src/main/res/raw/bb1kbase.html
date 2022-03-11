@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>PersoKbase - Opération</title>
+        <!-- On peut avoir d'autres méta-données ici -->
+        <style type="text/css">
+            @font-face {
+                font-family: helvetica;
+                src: url('fonts/helvetica_ttf.ttf');
+            }
+            @font-face {
+                font-family: helveticabold;
+                src: url('fonts/helvetica_bold_ttf.ttf');
+            }
+            body {
+                font-family: helvetica;
+                text-align: justify;
+                line-height: 180%;
+                color: #16134A;
+            }
+            h1, h2, h3 {
+                font-family: helveticabold;
+                text-align: center;
+                line-height: 120%;
+            }
+            h1 {color: #7F0066}
+            h2 {color: #06979F}
+            h3 {color: #464469}
+            a {text-decoration: none}
+        </style>
+    </head>
+    <body>
+        <span><h2>Installer un logiciel en local</h2></span>
+        <!-- Ici, on placera tout le contenu à destination
+        de l'utilisateur -->
+        <div>
+            <span><p>Le manager de logiciels Chocolatey est utilisé pour faciliter la maintenance des logiciels sur les
+                postes de travail. Un package logiciel est appelé sur le site chocolatey.org depuis un terminal en ligne
+                de commande, puis les dépendances sont vérifiées par le système d’installation des packages, qui
+                silencieusement déploie le logiciel dans l’environnement client. </p></span>
+            <!-- Ici, on placera les opérations de maintenance
+            essentielles au fonctionnement -->
+            <span><h3>Packages Open Source</h3></span>
+            <span><p>Rendez-vous sur le site de l’éditeur pour rechercher les packages disponibles, puis entrez la
+                commande “choco install …" dans une invite de commande administrateur (CMD). Ensuite ce package est
+                maintenu à jour avec la commande “choco upgrade …", et désinstallé avec la commande “choco uninstall …"
+                De nombreuses fonctionnalités ajoutent à Windows la facilité de gestion logicielle disponible avec Linux. </p></span>
+            <span><h3>Installation du manager</h3></span>
+            <span><p>Ce manager est disponible sur les postes pédagogiques, et s’installe facilement depuis une console
+                PowerShell. Pour cela, activez la stratégie des scripts en tapant “Set-ExecutionPolicy AllSigned” ou
+                “Set-ExecutionPolicy Bypass -Scope Process” pour ne modifier que la stratégie liée à cette ouverture du processus.
+                Puis tapez la commande indiquée sur le site de Chocolatey : le manager est installé dans le dossier
+                C:\ProgramData\chocolatey </p></span>
+
+        </div>
+    </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>PersoKbase - Diagnostique</title>
+        <!-- On peut avoir d'autres méta-données ici -->
+        <style type="text/css">
+            @font-face {
+                font-family: helvetica;
+                src: url('fonts/helvetica_ttf.ttf');
+            }
+            @font-face {
+                font-family: helveticabold;
+                src: url('fonts/helvetica_bold_ttf.ttf');
+            }
+            body {
+                font-family: helvetica;
+                text-align: justify;
+                line-height: 180%;
+                color: #16134A;
+            }
+            h1, h2, h3 {
+                font-family: helveticabold;
+                text-align: center;
+                line-height: 120%;
+            }
+            h1 {color: #7F0066}
+            h2 {color: #06979F}
+            h3 {color: #464469}
+            a {text-decoration: none}
+        </style>
+    </head>
+    <body>
+        <span><h2>Diagnostiquer une panne matérielle</h2></span>
+        <!-- Ici, on placera tout le contenu à destination
+        de l'utilisateur -->
+        <div>
+            <span><p>La carte mère d’un PC réalise dès la mise sous tension un ensemble d’opérations consistants à interconnecter
+                les composants/éléments matériels : le BIOS (Basic Input Output System) informe l’utilisateur sur l’état des disques
+                durs, lecteurs CD, mémoire vive, processeur, etc. Une pile électrique ronde alimente une mémoire CMOS enregistrant
+                les préférences prédéfinies. </p></span>
+            <!-- Ici, on placera les opérations de maintenance
+            essentielles au fonctionnement -->
+            <span><h3>Configuration du BIOS</h3></span>
+            <span><p>Il faut un mot de passe pour entrer sur la page d’information du BIOS. Toutefois les pannes matérielles sont
+                détectées avant cette phase du démarrage : un code d’erreur est affiché pour chaque problème rencontré lors de la
+                mise sous tension. Le BIOS n’est accessible que si une mémoire vive est détectée et si les ventilateurs fonctionnent.
+                Si la carte mère est alimentée et que le PC n’affiche pas l’erreur, le processeur est défectueux.</p></span>
+            <span><h3>Configuration du boot</h3></span>
+            <span><p>Les ordinateurs peuvent démarrer sur le réseau, sur une clé USB, ou sur un disque local. Le premier permet de
+                diagnostiquer une panne du contrôleur Ethernet, car la fonction PXE est native de la carte. Le deuxième test concerne
+                la mise en mémoire des informations de la clé USB, à savoir la fiabilité des calculs du processeur. Enfin le troisième
+                démarrage sur le disque local finit de compléter la liste des problèmes que l’on peut rencontrer au démarrage. </p></span>
+            <span><h3>Les affichages vidéos</h3></span>
+            <span><p>Il existe plusieurs normes : analogique (VGA), numérique (DVI) et haute définition (DP, HDMI). La connectique est
+                indépendante du contrôleur graphique, qui diffuse aussi bien sur les trois formats. Une carte externe est installée sur
+                la plupart des postes informatiques de projection, tandis que le chipset graphique de la carte mère permet de tester un
+                problème d’affichage. </p></span>
+
+        </div>
+    </body>
+</html>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.slideshow.SlideshowFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <WebView
+        android:id="@+id/text_kbase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        style="@style/Theme.PersoKbase.WebviewStyle"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/B1_kbase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/SlideTextB1"
+            tools:ignore="MissingConstraints"
+            app:cornerRadius="16dp"
+            style="@style/Theme.PersoKbase.BoutonStyle"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/B2_kbase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/SlideTextB2"
+            tools:ignore="MissingConstraints"
+            app:cornerRadius="16dp"
+            style="@style/Theme.PersoKbase.BoutonStyle"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/B3_kbase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/SlideTextB3"
+            tools:ignore="MissingConstraints"
+            app:cornerRadius="16dp"
+            style="@style/Theme.PersoKbase.BoutonStyle"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/B4_kbase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/SlideTextB4"
+            tools:ignore="MissingConstraints"
+            app:cornerRadius="16dp"
+            style="@style/Theme.PersoKbase.BoutonStyle"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/B5_kbase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/SlideTextB5"
+            tools:ignore="MissingConstraints"
+            app:cornerRadius="16dp"
+            style="@style/Theme.PersoKbase.BoutonStyle"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/B6_kbase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/SlideTextB6"
+            tools:ignore="MissingConstraints"
+            app:cornerRadius="16dp"
+            style="@style/Theme.PersoKbase.BoutonStyle"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/B7_kbase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/SlideTextB7"
+            tools:ignore="MissingConstraints"
+            app:cornerRadius="16dp"
+            style="@style/Theme.PersoKbase.BoutonStyle"/>
+        </RelativeLayout>
+
+        <WebView
+            android:id="@+id/text_kbase_sub1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints"
+            style="@style/Theme.PersoKbase.WebviewStyle"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/Bb1_kbase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/SlideTextBb1"
+                tools:ignore="MissingConstraints"
+                app:cornerRadius="16dp"
+                style="@style/Theme.PersoKbase.BoutonStyle"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/Bb2_kbase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/SlideTextBb2"
+                tools:ignore="MissingConstraints"
+                app:cornerRadius="16dp"
+                style="@style/Theme.PersoKbase.BoutonStyle"/>
+        </RelativeLayout>
+
+        <WebView
+            android:id="@+id/text_kbase_sub2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints"
+            style="@style/Theme.PersoKbase.WebviewStyle"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/Bsb1_kbase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/SlideTextBsb1"
+                tools:ignore="MissingConstraints"
+                app:cornerRadius="16dp"
+                style="@style/Theme.PersoKbase.BoutonStyle"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/Bsb2_kbase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/SlideTextBsb2"
+                tools:ignore="MissingConstraints"
+                app:cornerRadius="16dp"
+                style="@style/Theme.PersoKbase.BoutonStyle"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/Bsb3_kbase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/SlideTextBsb3"
+                tools:ignore="MissingConstraints"
+                app:cornerRadius="16dp"
+                style="@style/Theme.PersoKbase.BoutonStyle"/>
+        </RelativeLayout>
+
+        <WebView
+            android:id="@+id/text_kbase_end"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints"
+            style="@style/Theme.PersoKbase.WebviewStyle"/>
+
+    <!--<TextView
+        android:id="@+id/text_slideshow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />-->
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"/>
+    </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

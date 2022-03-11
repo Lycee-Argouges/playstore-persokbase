@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>PersoKbase - Diagnostique</title>
+        <!-- On peut avoir d'autres méta-données ici -->
+        <style type="text/css">
+            @font-face {
+                font-family: helvetica;
+                src: url('fonts/helvetica_ttf.ttf');
+            }
+            @font-face {
+                font-family: helveticabold;
+                src: url('fonts/helvetica_bold_ttf.ttf');
+            }
+            body {
+                font-family: helvetica;
+                text-align: justify;
+                line-height: 180%;
+                color: #16134A;
+            }
+            h1, h2, h3 {
+                font-family: helveticabold;
+                text-align: center;
+                line-height: 120%;
+            }
+            h1 {color: #7F0066}
+            h2 {color: #06979F}
+            h3 {color: #464469}
+            a {text-decoration: none}
+        </style>
+    </head>
+    <body>
+        <span><h2>Diagnostiquer un problème d'impression</h2></span>
+        <!-- Ici, on placera tout le contenu à destination
+        de l'utilisateur -->
+        <div>
+            <span><p>Il est rare de trouver une imprimante USB connectée à un ordinateur de bureau dans le cadre de
+                l’environnement informatique d’une entreprise. Il est encore plus rare que celle-ci soit partagées sur
+                le réseau sur le mode pair-à-pair. Aujourd’hui, les imprimantes sont gérées depuis des consoles dans le
+                Cloud au travers du protocole IPP (Internet Printing Protocol). </p></span>
+            <!-- Ici, on placera les opérations de maintenance
+            essentielles au fonctionnement -->
+            <span><h3>L’interface HTTP</h3></span>
+            <span><p>Chaque imprimante dotée d’un port Ethernet a une interface HTTP à partir de laquelle les informations
+                détaillées de l’imprimante sont rendus accessibles. Depuis un poste client, entrez l’adresse IP de l’imprimante
+                dans un navigateur Web pour consulter, par exemple, le niveau de l’encre.</p></span>
+            <span><h3>Le rapport d’erreur</h3></span>
+            <span><p>Si l’imprimante est inaccessible depuis un navigateur Web, rendez-vous physiquement à l’imprimante pour
+                imprimer le rapport d’état TCP/IP. Sinon, désinstallez/réinstallez l’imprimante à partir du panneau de
+                configuration du PC. Choisissez les pilotes d’impression universels pour une utilisation standard, et les
+                pilotes d’impression du matériel si les options avancées de l’imprimante vous intéressent. </p></span>
+            <span><h3>La connexion TCP/IP</h3></span>
+            <span><p>Dans le domaine pédagogique, un serveur d’impression a la charge d’installer automatiquement les imprimantes
+                sur les postes clients en distribuant les pilotes prédéfinis à chaque nouvelle demande d’installation. Tous les
+                routeurs sont configurés pour autoriser le protocole IPP et router les paquets TCP avec une qualité de service
+                garantissant la connexion continue des imprimantes au serveur. </p></span>
+            <span><h3>Vers le numérique</h3></span>
+            <span><p>La gestion externalisée de la maintenance des imprimantes nécessite que la société spécialisée accède aux
+                rapports d’erreur depuis le Web. L’ouverture du pare-feu de l’établissement en accès HTTP étant proscrit, le
+                protocole IPP transfert les données de l’imprimante sur le Cloud avec une sécurité garantie. Cette prérogative
+                facilite les négociations dans les contrats de maintenance. </p></span>
+
+        </div>
+    </body>
+</html>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="fr.argouges.persokbase.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="fr.argouges.persokbase.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_security"
+        android:name="fr.argouges.persokbase.ui.security.SecurityFragment"
+        android:label="@string/menu_security"
+        tools:layout="@layout/fragment_security" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="fr.argouges.persokbase.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_content"
+        android:name="fr.argouges.persokbase.ui.content.ContentFragment"
+        android:label="@string/menu_content"
+        tools:layout="@layout/fragment_content" />
+
+    <fragment
+        android:id="@+id/nav_activity"
+        android:name="fr.argouges.persokbase.ui.activity.ActivityFragment"
+        android:label="@string/menu_activity"
+        tools:layout="@layout/fragment_activity" />
+
+    <fragment
+        android:id="@+id/nav_support"
+        android:name="fr.argouges.persokbase.ui.support.SupportFragment"
+        android:label="@string/menu_support"
+        tools:layout="@layout/fragment_support" />
+
+    <fragment
+        android:id="@+id/nav_example"
+        android:name="fr.argouges.persokbase.ui.example.ExampleFragment"
+        android:label="@string/menu_example"
+        tools:layout="@layout/fragment_example" />
+</navigation>

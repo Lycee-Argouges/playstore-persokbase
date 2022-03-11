@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>PersoKbase - Diagnostique</title>
+        <!-- On peut avoir d'autres méta-données ici -->
+        <style type="text/css">
+            @font-face {
+                font-family: helvetica;
+                src: url('fonts/helvetica_ttf.ttf');
+            }
+            @font-face {
+                font-family: helveticabold;
+                src: url('fonts/helvetica_bold_ttf.ttf');
+            }
+            body {
+                font-family: helvetica;
+                text-align: justify;
+                line-height: 180%;
+                color: #16134A;
+            }
+            h1, h2, h3, h4 {
+                font-family: helveticabold;
+                text-align: center;
+                line-height: 120%;
+            }
+            h1 {color: #7F0066}
+            h2 {color: #06979F}
+            h3 {color: #464469}
+            h4 {color: #847AFA}
+            a {text-decoration: none}
+        </style>
+    </head>
+    <body>
+        <span><h2>Diagnostiquer une panne de réseau</h2></span>
+        <!-- Ici, on placera tout le contenu à destination
+        de l'utilisateur -->
+        <div>
+            <span><p>Un ordinateur qui n'est pas relié au réseau Ethernet aura des voyants lumineux éteints. Si la prise est bien brassée,
+                et que l'ordinateur démarre, différents outils sont à votre disposition. </p></span>
+            <!-- Ici, on placera les opérations de maintenance
+            essentielles au fonctionnement -->
+            <span><h3>Panneau de configuration du réseau</h3></span>
+            <span><p>La première chose à vérifier est l'adresse IP de l'ordinateur. Elle doit avoir la forme
+            172.20.X.X : cela se comprend par l'adressage effectué par le serveur DHCP de l'établissement.
+            Le Dynamic Host Configuration Protocol distribue un identifiant (IP), un masque (sous-réseau), et une passerelle
+            (Internet) afin que chaque ordinateur soit connu des autres. Le sous-réseau 172.16.64.X est bloqué pour
+            la navigation sur internet.</p></span>
+            <span><h3>Système et sécurité</h3></span>
+            <span><p>La communication sur Internet s'effectue en plusieurs transactions TCP/IP : un message de sortie
+            réserve un socket E/S sur la carte ; le serveur répond sur un port logiciel ouvert dans le pare-feu (firewall) du PC ;
+            les routeurs déterminent la route la plus sûre pour acheminer les messages. Vérifiez que la connexion
+            utilisée appartient aux règles du pare-feu "Domaine/Bureau" ou "Privé/Domestique". N'utilisez le mode "Public"
+            que lorsque vous ne connaissez pas votre environnement réseau.</p></span>
+            <span><h3>Invite de commande</h3></span>
+            <span><p>Les commandes ci-dessous sont indispensables :</p></span>
+            <span><h4>Ipconfig /all</h4></span>
+            <span>Informe l'utilisateur des propriétés de la carte réseau. Pour chaque carte réseau détecté, même virtuelle, vous
+                récupérez votre adresse MAC, votre adresse IP, votre masque de sous-réseau et votre passerelle.</span>
+            <span><h4>Ipconfig /release</h4></span>
+            <span>Vous libérer l’adresse IP retenue par la carte réseau. La commande ipconfig /renew s’utilise en complément, pour demander
+                au serveur DHCP une nouvelle adresse IP. </span>
+            <span><h4>Ipconfig /displaydns</h4></span>
+            <span>Affiche le contenu du cache de résolution DNS. Chaque site dispose d’une adresse IP et d’un nom convivial, dont la résolution
+                (translation) est gérée par le Dynamic Name Service.</span>
+            <span><h4>Ping destination –n X</h4></span>
+            <span>Détermine l'état de la connexion vers un site distant. Elle se base sur le protocole ICMP qui ne transmet pas de données sur
+                le PC demandant l'information. </span>
+            <span><h4>Arp -a</h4></span>
+            <span>Affiche la correspondance entre adresses IP et adresse MAC (physique) des ordinateurs connectés au même sous-réseau que le PC utilisé,
+                et dont la connexion pair-à-pair a été initialisée. </span>
+            <span><h4>Tracert</h4></span>
+            <span>Permet de suivre la progression d'un message sur le réseau à destination d'un site, affichant les
+            adresses IP des matériels par lesquels ce message transite.</span>
+            <span><h4>Route</h4></span>
+            <span>Route print affiche les itinéraires persistants sur un ordinateur. C'est-à-dire si l'ordinateur
+            prédéfini le trajet d'un message qu'il envoie à destination d'un site.</span>
+            <span><h4>Netstat</h4></span>
+            <span>Informe l'utilisateur sur les ports logiciels ouverts/fermés/en attente du PC utilisé.</span>
+            <span><h3>Paramètres internet</h3></span>
+            <span><p>Enfin, réinitialisez les paramètres internet en cas de connexion impossible depuis un poste de travail particulier.
+                Certains sites demandent la modification des paramètres avancés d'Internet Explorer et causent des erreurs d'exécution du
+                programme. De manière générale, testez une connexion avec un navigateur web dont les paramètres ont été réinitialisé avant
+                d'étudier un dysfonctionnement du réseau. </p></span>
+
+        </div>
+    </body>
+</html>

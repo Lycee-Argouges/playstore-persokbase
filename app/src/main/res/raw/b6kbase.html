@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>PersoKbase - Diagnostique</title>
+        <!-- On peut avoir d'autres méta-données ici -->
+        <style type="text/css">
+            @font-face {
+                font-family: helvetica;
+                src: url('fonts/helvetica_ttf.ttf');
+            }
+            @font-face {
+                font-family: helveticabold;
+                src: url('fonts/helvetica_bold_ttf.ttf');
+            }
+            body {
+                font-family: helvetica;
+                text-align: justify;
+                line-height: 180%;
+                color: #16134A;
+            }
+            h1, h2, h3 {
+                font-family: helveticabold;
+                text-align: center;
+                line-height: 120%;
+            }
+            h1 {color: #7F0066}
+            h2 {color: #06979F}
+            h3 {color: #464469}
+            a {text-decoration: none}
+        </style>
+    </head>
+    <body>
+        <span><h2>Diagnostiquer un problème de pilote</h2></span>
+        <!-- Ici, on placera tout le contenu à destination
+        de l'utilisateur -->
+        <div>
+            <span><p>L’observateur d’évènements Windows est indispensable dans l’étude des problèmes rencontrés. L’ID
+                de l’évènement est référencé sur le site du support Microsoft qui donne des informations détaillées sur
+                l’erreur, son origine, les solutions de résolution et de contournement. Pour accéder à cet outil d’administration :
+                Panneau de configuration\Système et sécurité\Outils d’administration. </p></span>
+            <!-- Ici, on placera les opérations de maintenance
+            essentielles au fonctionnement -->
+            <span><h3>Journalisation</h3></span>
+            <span><p>Un évènement est créé selon 5 niveaux : critique, erreur, avertissement, information, commentaire. Les
+                incidents les plus étudiés sont les évènements de type erreur. Ils ne génèrent pas le plantage du système mais
+                révèle son incapacité à démarrer un programme et/ou un service. La source de l’erreur donne une indication sur
+                les appels effectués par une application aux modules du système d’exploitation nécessaires à son fonctionnement. </p></span>
+            <span><h3>Support Microsoft</h3></span>
+            <span><p>La recherche du numéro de l’évènement est précédée par EventID. Systématiquement les renseignements de symptôme
+                et de cause sont relatés dans un article technique rédigé par l’équipe du support produit Windows (en plusieurs langues).
+                Dans le cas d’un problème de pilote, il sera conseillé de télécharger ces derniers sur le site du constructeur du matériel,
+                ou alors d’utiliser le service Windows Update pour la mise à jour du système d’exploitation et la récupération des
+                meilleurs pilotes génériques disponibles. </p></span>
+
+        </div>
+    </body>
+</html>

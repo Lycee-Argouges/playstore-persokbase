@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <PreferenceCategory
+        android:layout="@layout/activity_preferences"/>
+    <PreferenceCategory
+        android:title="Accès aux données">
+
+            <CheckBoxPreference
+                android:key="LinkStoreLocal"
+                android:title="@string/Pref0"
+                android:defaultValue="false"/>
+
+            <CheckBoxPreference
+                android:key="LinkStoreDefault"
+                android:title="@string/Pref1"
+                android:summaryOn=""
+                android:summaryOff="Défaut : Android/data"
+                android:dependency="LinkStoreLocal"
+                android:defaultValue="false"/>
+
+            <ListPreference
+                android:key="LinkStore"
+                android:dialogTitle="Choisissez votre emplacement d'enregistrement"
+                android:entries="@array/liste_preferences"
+                android:entryValues="@array/liste_preferences_val"
+                android:title="Définir le lieu de stockage"
+                android:dependency="LinkStoreDefault"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Chiffrement des données">
+
+        <CheckBoxPreference
+            android:key="LinkKeyEncrypt"
+            android:title="@string/Pref2"
+            android:defaultValue="true"/>
+
+        <EditTextPreference
+            android:key="LinkKeySave"
+            android:dialogTitle="@string/Pref3box"
+            android:positiveButtonText="Enr."
+            android:negativeButtonText="Quit."
+            android:title="@string/Pref3"
+            android:summary="@string/Pref3sum"
+            android:dependency="LinkKeyEncrypt" />
+
+
+    </PreferenceCategory>
+</PreferenceScreen>

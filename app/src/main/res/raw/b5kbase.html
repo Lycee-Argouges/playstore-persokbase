@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>PersoKbase - Diagnostique</title>
+        <!-- On peut avoir d'autres méta-données ici -->
+        <style type="text/css">
+            @font-face {
+                font-family: helvetica;
+                src: url('fonts/helvetica_ttf.ttf');
+            }
+            @font-face {
+                font-family: helveticabold;
+                src: url('fonts/helvetica_bold_ttf.ttf');
+            }
+            body {
+                font-family: helvetica;
+                text-align: justify;
+                line-height: 180%;
+                color: #16134A;
+            }
+            h1, h2, h3 {
+                font-family: helveticabold;
+                text-align: center;
+                line-height: 120%;
+            }
+            h1 {color: #7F0066}
+            h2 {color: #06979F}
+            h3 {color: #464469}
+            a {text-decoration: none}
+        </style>
+    </head>
+    <body>
+        <span><h2>Diagnostiquer un problème d'affichage</h2></span>
+        <!-- Ici, on placera tout le contenu à destination
+        de l'utilisateur -->
+        <div>
+            <span><p>Tout comme la projection vidéo, le double écran est sujet à la configuration de paramètres qui ne sont
+                pas considérés comme “par défaut” par le système d’exploitation. Lors d’un redémarrage de l’ordinateur,
+                plusieurs configurations sont chargées à la suite les unes des autres selon l’étape en cours (BIOS, NTDETECT.COM,
+                Services Windows, SMSS). </p></span>
+            <!-- Ici, on placera les opérations de maintenance
+            essentielles au fonctionnement -->
+            <span><h3>Stockage des paramètres</h3></span>
+            <span><p>Les préférences de l’utilisateur Windows sont accessibles par un clic droit sur le bureau -> Paramètres
+                d’affichage. Ils permettent de régler l’orientation de l’écran et le mode d’affichage (bureau étendu). Ils
+                sont stockés par le système d’exploitation et chargés au moment où l’ordinateur affiche une session utilisateur. </p></span>
+            <span><p>La configuration de l’affichage via le panneau de contrôle de la carte graphique est chargée lors de
+                l’initialisation du noyau, phase pendant laquelle le pilote de périphérique est mis en mémoire. Une configuration
+                par défaut doit rester sur un seul affichage afin de limiter les problèmes au démarrage. </p></span>
+            <span><p>Le vidéoprojecteur enregistre dans une mémoire interne les valeurs d’une série de paramètres tels que la
+                taille, la netteté et les couleurs. Ils ont une influence directe sur l’adaptation de l’image entre l’entrée
+                et la sortie du signal.  </p></span>
+            <span><h3>Résolutions et dysfonctionnement</h3></span>
+            <span><p>Veillez à définir une résolution de l’image qui ne surpasse pas la taille enregistrée dans les paramètres du
+                vidéoprojecteur. Une image de 1024*768 s’affichera avec moins de difficulté qu’une image de 1920*1080. </p></span>
+            <span><p>En cas de dysfonctionnement, il faudra utiliser le vidéoprojecteur comme affichage principal depuis
+                le connecteur de la carte mère (chipset graphique). Le pilote de ce dernier n’a pas d’option avancé susceptible
+                de provoquer un mauvais traitement du signal par le vidéoprojecteur. </p></span>
+
+        </div>
+    </body>
+</html>

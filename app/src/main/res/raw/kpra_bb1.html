@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>PersoKbase - Bonnes pratiques</title>
+        <!-- On peut avoir d'autres méta-données ici -->
+        <style type="text/css">
+            @font-face {
+                font-family: helvetica;
+                src: url('fonts/helvetica_ttf.ttf');
+            }
+            @font-face {
+                font-family: helveticabold;
+                src: url('fonts/helvetica_bold_ttf.ttf');
+            }
+            body {
+                font-family: helvetica;
+                text-align: justify;
+                line-height: 180%;
+                color: #16134A;
+            }
+            h1, h2, h3 {
+                font-family: helveticabold;
+                text-align: center;
+                line-height: 120%;
+            }
+            h1 {color: #7F0066}
+            h2 {color: #06979F}
+            h3 {color: #464469}
+            a {text-decoration: none}
+        </style>
+    </head>
+    <body>
+        <span><h2>Pronote web et mobile</h2></span>
+        <!-- Ici, on placera tout le contenu à destination
+        de l'utilisateur -->
+        <div>
+            <span><p>Le langage XML est utilisé dans les sites Web et les applications mobiles Android pour mettre en forme le document.
+                Concrètement, ce langage n’est ni interprété, ni compilé : il décrit des objets à partir de paramètres (attributs), qui
+                s’imbriquent les uns aux autres dans une arborescence à un seul parent. </p></span>
+            <span><p>Dans une application Android, chaque vue (screen) est constituée d’un document XML plaçant les éléments à l’affichage.
+                Par exemple, on peut diviser l’écran en 2 parties, en haut et en bas. En haut, le fond est bleu, et 3 boutons apparaissent.
+                En bas le fond est rouge, et un bandeau est positionné. De plus, le bandeau contient à la fois des images et du texte.
+                Ici, la racine de la description fournit par le XML est l’écran (screen), avec 2 balises “haut” et “bas”... chacune d’elle
+                imbriquant des balises “bouton” et “bandeau”... qui à leur tour imbriquent des balises “images” et “texte”. </p></span>
+            <span><p>En HTML, dont les balises servent déjà à mettre en forme le site internet, le document XML est lié à la notion
+                d’évènement. Le clic, le survol de la souris, le temps (délai), le glisser-déposer, etc. sont autant de fonction qui
+                font appel au XML. A chaque balise HTML est associée une balise XHTML lorsque le langage JavaScript est appelé. Cette
+                superposition permet d’exécuter du code d’après les actions de l’utilisateur. Avec HTML seul, le bouton uniquement rend
+                dynamique une page web. </p></span>
+            <!-- Ici, on placera les opérations de maintenance
+            essentielles au fonctionnement -->
+            <span><h3>Comment parler le XML ?</h3></span>
+            <span><p>La structure d’un document XML est défini est validable par un schéma DSDL (Document Schema Definition Languages).
+                En clair, le DSDL est un ensemble de règles et de contraintes qui s’appliquent à la description des balises (objets)
+                contenus dans un document XML. Par exemple, un bouton peut avoir des attributs de couleur et de texte, mais pas de
+                contenu vidéo ou d’images... tandis qu’une fenêtre modulable peut contenir tous ces attributs sans les cumuler pour
+                autant – soit des images, soit une vidéo. Le XML accepte plus d’une seule syntaxe de schéma : DTD, XML Schema,
+                Relax NG, Schematron. </p></span>
+            <span><h3>Pourquoi le XML est-il mondial ?</h3></span>
+            <span><p>Le langage de balisage XML est simple et s’adapte à des évolutions extérieures. Sa réussite s’explique par des
+                implémentations concurrentes de nombreuses interfaces de programmation (API). La majeure partie d’un processus informatique
+                se découpe en opérations plus petites, elle-même pouvant faire appel à des éléments (fonctions). Le langage XML se comporte
+                très bien pour organiser/relier/décrire des ensembles d’objets étendus et disparates, s’imbriquant fortement ou faiblement
+                les uns avec les autres. </p></span>
+            <span><p>D’abord le XHTML apporte au SGML natif du langage HTML un véritable contrôle sur la structure présentée aux navigateurs
+                clients demandant une page web ; puis au travers de Java avec des API de sérialisation, d’analyse et de gestion des
+                registres, XML s’est imposé comme une connaissance incontournable des amateurs en informatique. Il est utilisé dans les
+                applications Pronote web et mobile car depuis l'année de sa création en 1999 il trouve les moyens de s’adapter aux
+                évolutions du secteur. </p></span>
+
+        </div>
+    </body>
+</html>

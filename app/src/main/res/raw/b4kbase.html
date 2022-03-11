@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>PersoKbase - Diagnostique</title>
+        <!-- On peut avoir d'autres méta-données ici -->
+        <style type="text/css">
+            @font-face {
+                font-family: helvetica;
+                src: url('fonts/helvetica_ttf.ttf');
+            }
+            @font-face {
+                font-family: helveticabold;
+                src: url('fonts/helvetica_bold_ttf.ttf');
+            }
+            body {
+                font-family: helvetica;
+                text-align: justify;
+                line-height: 180%;
+                color: #16134A;
+            }
+            h1, h2, h3 {
+                font-family: helveticabold;
+                text-align: center;
+                line-height: 120%;
+            }
+            h1 {color: #7F0066}
+            h2 {color: #06979F}
+            h3 {color: #464469}
+            a {text-decoration: none}
+        </style>
+    </head>
+    <body>
+        <span><h2>Diagnostiquer une panne de démarrage</h2></span>
+        <!-- Ici, on placera tout le contenu à destination
+        de l'utilisateur -->
+        <div>
+            <span><p>L’ordinateur est sous-tension, le secteur d’amorçage du disque dur est accessible, la page Windows apparaît...
+                Mais un problème est rencontré. Au nouveau démarrage, l’utilitaire de résolution des problèmes est exécuté est le
+                PC affiche une progression qui semble s’éterniser, pour afficher le message suivant : “Aucune solution n’a été trouvée”. </p></span>
+            <!-- Ici, on placera les opérations de maintenance
+            essentielles au fonctionnement -->
+            <span><h3>Démarrage de Windows</h3></span>
+            <span><p>Le bootstrap contient le fichier <b>Ntdlr</b> qui détient les informations sur le matériel et les pilotes requis
+                lors du chargement de NT. Le premier message d’erreur rencontré peut être : <b>A kernel file is missing from the disk</b>.
+                Il charge également le bootmgr, responsable de l’exécution du BCD (Boot Configuration Data) qui détient le chemin du winload.
+                Sur Windows ces valeurs sont toujours les mêmes... il y a donc peu de risque de trouver un autre message d’erreur à cette étape.</p></span>
+            <span><h3>Chargement du kernel</h3></span>
+            <span><p>Le fichier Kernel Ntdlr s’assure de la mise en mémoire des files du couple Ntoskrnl.exe et Hal.dll. A ce stade un nouveau
+                message d’erreur peut être rencontré : <b>Windows NT could not start because the following file was missing or corrupt</b>.
+                Le programme cherchera dans le registre Windows les clés HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet indispensables à
+                l’initialisation du noyau. Un écran bleu de la mort peut apparaître à cette étape. </p></span>
+            <span><h3>Initialisation du noyau</h3></span>
+            <span><p>Une restauration du système est indispensable si le fichier NTDETECT.COM a été corrompu. Celui-ci utilise le BIOS pour
+                connaître la configuration et le matériel présent à travers le CMOS. Les paramètres sont passés au noyau par l’intermédiaire
+                de l’exécutable Ntoskrnl.exe initialisé précédemment. A ce moment la ruche HARDWARE est créée dans le registre Windows pour
+                rendre accessible les pilotes des périphériques.</p></span>
+            <span><h3>Chargement des services</h3></span>
+            <span><p>Enfin, le processus SMSS.exe est lancé par le système. Il est responsable de la gestion des utilisateurs, de l’ouverture des
+                sessions, et de la mise en disponibilité des ressources apparentées. Il signifie Session Management Subsystem. </p></span>
+
+        </div>
+    </body>
+</html>
