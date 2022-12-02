@@ -1,9 +1,11 @@
 package fr.argouges.persokbase;
 
+import android.Manifest;
 import android.app.ProgressDialog;
 import android.content.ClipData;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.net.ConnectivityManager;
@@ -34,6 +36,7 @@ import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
 import androidx.annotation.NonNull;
+import androidx.core.content.ContextCompat;
 import androidx.core.content.res.ResourcesCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
@@ -91,7 +94,18 @@ public class MainActivity extends AppCompatActivity {
         PACKAGE_NAME = getApplicationContext().getPackageName();
         PATH_ROOT = this.getFilesDir().toString();
         KEY_ENCRYPT = getKey();
-
+        if (ContextCompat.checkSelfPermission(MainActivity.this, Manifest.permission.ACCESS_NETWORK_STATE) != PackageManager.PERMISSION_GRANTED)
+        {
+            askForPermissionNetstat();
+        }
+        if (ContextCompat.checkSelfPermission(MainActivity.this, Manifest.permission.INTERNET) != PackageManager.PERMISSION_GRANTED)
+        {
+            askForPermissionInternet();
+        }
+        if (ContextCompat.checkSelfPermission(MainActivity.this, Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED)
+        {
+            askForPermissionStorage();
+        }
         /*FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -129,6 +143,21 @@ public class MainActivity extends AppCompatActivity {
         //Une page dédiée pourra contenir les ressources de la section content
         selectDownFold();
 
+    }
+
+    private void askForPermissionStorage()
+    {
+        requestPermissions(new String[] { Manifest.permission.WRITE_EXTERNAL_STORAGE }, 2);
+    }
+
+    private void askForPermissionInternet()
+    {
+        requestPermissions(new String[] { Manifest.permission.INTERNET }, 2);
+    }
+
+    private void askForPermissionNetstat()
+    {
+        requestPermissions(new String[] { Manifest.permission.ACCESS_NETWORK_STATE }, 2);
     }
 
     @Override
